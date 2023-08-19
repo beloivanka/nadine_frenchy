@@ -1,0 +1,58 @@
+.desktop-menu-container {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+}
+.mobile-menu-container{
+    display: none;
+}
+
+.menu-list {
+    list-style-type: none;
+}
+
+.menu-text:visited {
+    color: white;
+}
+
+.menu-text {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-text:hover{
+    text-decoration: underline;
+}
+
+/* Extra small devices: phones */
+@media (max-width: 480px) {
+    .desktop-menu-container{
+        display: none;
+    }
+    .mobile-menu-container{
+        display: block;
+        position: absolute;
+        top: 2%;
+        left: 90%;
+        color: white;
+    }
+}
+
+/* Small devices: portrait tablets and large phones */
+@media (min-width: 481px, max-width:767px) {
+    .desktop-menu-container{
+        display: none;
+    }
+    .mobile-menu-container{
+        display: block;
+        position: absolute;
+        top: 2%;
+        left: 90%;
+        color: white;
+    }
+}
+

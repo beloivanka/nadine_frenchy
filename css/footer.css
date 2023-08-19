@@ -1,0 +1,67 @@
+.footer-container {
+    background-color: #D9D9D9;
+    padding: 2% 20%;
+    text-align: center;
+}
+
+.footer-line {
+    background-color: #747474;
+    height: 2px;
+    width: 34%;
+    margin-left: 33%;
+    margin-bottom: 4%;
+}
+
+.footer-text {
+    color: #747474;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2px;
+}
+
+.footer-icon {
+    color: #296BEB;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.footer-icon:visited {
+    color: #296BEB;
+}
+
+.footer-icon:hover {
+    color: #0051EF;
+}
+
+
+.copyright {
+    background-color: #AAA6A6;
+    text-align: center;
+    padding: 1%;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+
+/* Extra small devices: phones */
+@media (max-width: 480px) {
+    /* STYLES Mobile Version */
+    .footer-text{
+        font-size: 18px;
+    }
+    .footer-icon{
+        font-size: 36px;
+    }
+    .footer-container{
+        padding: 4% 20%;
+    }
+    .footer-line{
+        width: 84%;
+    margin-left: 8%;
+    }
+     }

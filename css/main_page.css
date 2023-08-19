@@ -1,0 +1,589 @@
+/* STYLES */
+
+body {
+    margin: 0;
+    font-family: 'Inter';
+}
+
+.main-title-style {
+    color: #FFF;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+}
+
+.subtitle-style {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    margin: 0 0 2% 0;
+}
+
+.button-style {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: #296BEB;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.button-style:hover {
+    background-color: #0051EF;
+}
+
+.title-style {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.text-style {
+    color: #272727;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.black {
+    color: #272727;
+}
+
+.blue {
+    color: #296BEB;
+}
+
+.white {
+    color: white;
+}
+
+
+/* Main Page Top Content */
+
+.desktop-main-page-img {
+    width: 100%;
+    filter: brightness(75%)
+}
+
+.mobile-main-page-img {
+    display: none;
+}
+
+.main-page-content {
+    position: absolute;
+    top: 25%;
+    left: 46%;
+    text-align: center;
+
+}
+
+.main-page-subtitle {
+    margin-top: 42px;
+    margin-bottom: 40px;
+}
+
+/* About me */
+
+.about-container {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.desktop-my-photo1 {
+    width: 55%;
+
+}
+
+.mobile-my-photo1 {
+    display: none;
+}
+
+.about-content {
+    background-color: #F0F0F0;
+    padding: 10% 6%;
+
+}
+
+.blue-line {
+    height: 2px;
+    background-color: #296BEB;
+}
+
+.blue-line-about {
+    width: 100%;
+}
+
+.more-button1 {
+    margin: 4% 0 4% 60%;
+}
+
+/* Courses Cards */
+
+.mobile-cards-container {
+    display: none;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-subtitle {
+    text-align: center;
+}
+
+.desktop-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 4% 1% 4%;
+}
+
+.card {
+    width: 23%;
+    background-color: #F0F0F0;
+    border-radius: 15px;
+    box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.card-image {
+    width: 100%;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.blue-line-card {
+    width: 82%;
+    height: 1px;
+    background-color: #296BEB;
+}
+
+.card-content {
+
+    padding: 0 12% 6% 12%;
+
+}
+
+.card-text-style {
+    color: #272727;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 18px;
+}
+
+.card-icon-style {
+    color: #272727;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.card-icon-text-style {
+    color: #272727;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.card-button {
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: #296BEB;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    margin-left: 48%;
+}
+
+.card-button:hover {
+    background-color: #0051EF;
+}
+
+.mobile-cards-circles-container {
+    display: none;
+}
+
+
+
+/* OUR GOAL PART */
+
+.desktop-main-page-photo2 {
+    width: 52%;
+}
+
+.mobile-main-page-photo2 {
+    display: none;
+}
+
+.ipad-main-page-img2 {
+    display: none;
+}
+
+.goal-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 26px;
+}
+
+.goal-content {
+
+    background-color: #F0F0F0;
+    padding: 4%
+}
+
+.blue-line-goal {
+    width: 100%;
+}
+
+.book-button1 {
+    margin: 4% 0 4% 44%;
+}
+
+/* AVIS */
+
+.mobile-avis-container {
+    display: none;
+}
+
+.desktop-avis-container {
+    display: block;
+    background-color: #F0F0F0;
+    border-radius: 15px;
+    box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.25);
+    padding: 4% 4% 3% 4%;
+    margin: 0 8% 3% 8%;
+
+}
+
+.avis-img {
+    width: 100%;
+}
+
+.quotes {
+    width: 6%;
+    height: 100%;
+}
+
+.circles-container {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.quote2 {
+    margin-left: 4%;
+    margin-top: 26%;
+}
+
+.quote1 {
+    margin-right: 4%;
+}
+
+.avis-items-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.avis-img-name {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 4% 0 0;
+    width: 156%;
+}
+
+.avis-name {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.avis-text {
+    font-size: 14px;
+}
+
+.swipe-circle {
+    font-size: 16px;
+}
+
+/* Extra small devices: phones */
+@media (max-width: 480px) {
+    /* STYLES Mobile Version */
+
+    .main-title-style {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+    }
+
+    .subtitle-style {
+        font-size: 12px;
+        line-height: normal;
+        margin: 4% 0;
+    }
+
+    .button-style {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .button-style:hover {
+        background-color: #0051EF;
+    }
+
+    .title-style {
+        font-size: 20px;
+        line-height: 10px;
+
+    }
+
+    .text-style {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .section-title {
+        text-align: center;
+        line-height: 16px;
+        margin: 4% 0 0 0;
+    }
+
+    /* Main content MOBILE */
+
+    .mobile-menu-container {
+        display: block;
+    }
+
+    .desktop-main-page-img {
+        display: none;
+    }
+
+    .mobile-main-page-img {
+        display: block;
+        width: 100%;
+    }
+
+    .main-page-content {
+        position: absolute;
+        top: 10%;
+        left: 34%;
+        padding: 0 6%;
+    }
+
+    .main-page-subtitle {
+        margin: 10% 0;
+    }
+
+    .desktop-my-photo1 {
+        display: none;
+    }
+
+    .mobile-my-photo1 {
+        display: block;
+        width: 100%;
+    }
+
+    .blue-line-about {
+        width: 74%;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-content {
+        padding: 4% 10%;
+    }
+
+    .about-content-header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .more-button1 {
+        margin: 2% 0 2% 68%;
+    }
+
+    /* CARDS MOBILE */
+
+    .mobile-cards-container {
+        display: block;
+        background-color: #F0F0F0;
+
+    }
+
+    .desktop-cards-container {
+        display: none;
+    }
+
+    .mobile-card-image {
+        display: block;
+        width: 100%;
+    }
+
+    .description-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .blue-line-card {
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .card-button {
+        margin-left: 72%;
+    }
+
+    .mobile-cards-circles-container {
+        display: block;
+        text-align: center;
+        margin: 2% 0;
+    }
+
+    /* Our goal MOBILE */
+
+    .desktop-main-page-photo2 {
+        display: none;
+    }
+
+    .ipad-main-page-img2 {
+        display: none;
+    }
+
+    .mobile-main-page-photo2 {
+        display: block;
+        width: 100%;
+    }
+
+    .goal-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .goal-content {
+        padding: 4% 10%;
+    }
+
+    .goal-content-header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .blue-line-goal {
+        width: 88%;
+    }
+
+    .book-button1 {
+        margin: 4% 0 4% 52%;
+    }
+
+    /* Avis MOBILE */
+
+    .desktop-avis-container {
+        display: none;
+    }
+
+
+    .mobile-avis-container {
+        display: block;
+        background-color: #F0F0F0;
+        border-radius: unset;
+        box-shadow: none;
+        padding: 6% 8% 6% 8%;
+        margin: 0;
+    }
+
+    .photo-text-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .avis-img {
+        width: 18%;
+    }
+
+    .avis-img-name {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .quote2 {
+        margin-top: 72%;
+    }
+
+    .quotes {
+        width: 10%;
+    }
+
+    .avis-name {
+        font-size: 18px;
+        margin-top: 6%;
+
+    }
+
+    .circles-container {
+        margin: 2% 0;
+    }
+
+}
+
+
+
+/* Small devices: portrait tablets and large phones */
+@media (min-width: 481px) and (max-width:767px) {
+
+    .main-title-style {
+        font-size: 22px;
+        line-height: 16px;
+    }
+
+    .subtitle-style {
+        font-size: 12px;
+    }
+
+    .button-style {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+
+
+    .main-page-content {
+        position: absolute;
+        top: 12%;
+        left: 36%;
+    }
+
+    .main-page-subtitle {
+        margin: 6% 0;
+    }
+}

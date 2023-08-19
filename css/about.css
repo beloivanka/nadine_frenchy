@@ -1,0 +1,165 @@
+/* STYLES */
+
+body {
+    margin: 0;
+    font-family: 'Inter';
+}
+
+.main-title-style {
+    color: #FFF;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+}
+
+.subtitle-style {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    margin: 2% 0;
+}
+
+.button-style {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: #296BEB;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.button-style:hover {
+    background-color: #0051EF;
+}
+
+.title-style {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.text-style {
+    color: #272727;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.black {
+    color: #272727;
+}
+
+.blue {
+    color: #296BEB;
+}
+
+.white {
+    color: white;
+}
+
+.bold{
+    font-weight: 400;
+}
+
+
+/* About Top Content */
+
+.desktop-about-img1 {
+    width: 100%;
+    filter: brightness(75%);
+}
+
+.mobile-about-img1 {
+    display: none;
+}
+
+.about-header-content {
+    position: absolute;
+    top: 32%;
+    left: 26%;
+    right: 27%;
+    text-align:left;
+
+}
+
+.main-page-subtitle {
+    margin-top: 42px;
+    margin-bottom: 40px;
+}
+
+.section-title{
+    text-align: center;
+}
+
+.section-subtitle{
+    text-align: center;
+}
+
+.youtube-video{
+    text-align: center;
+}
+
+/* About content part 1 */
+
+.about-container {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+.desktop-about-img2 {
+    width: 55%;
+
+}
+
+.mobile-about-img2 {
+    display: none;
+}
+
+.about-content {
+    background-color: #F0F0F0;
+    padding: 10% 6%;
+
+}
+
+.blue-line {
+    height: 2px;
+    background-color: #296BEB;
+}
+
+.blue-line-about {
+    width: 100%;
+}
+
+/* About content part 2 */
+
+
+.about-part2-container{
+    margin: 2% 6%;
+    border: 1px solid #296BEB;
+    padding: 2%;
+}
+
+/* About content part 3 */
+.about-part3-container{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 2%;
+}
+.desktop-about-img3{
+    width: 55%;
+}
+
+.mobile-about-img3{
+display: none;
+}
