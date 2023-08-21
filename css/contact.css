@@ -118,9 +118,9 @@ margin: 4% 0;
    color:  #A5A5A5;
     font-size: 14px;
 font-style: normal;
-font-weight: 700;
+font-weight: 300;
 line-height: normal;
-margin: 4% 0;
+margin: 2% 0;
 }
 .input-style{
     border-radius: 6px;
@@ -134,10 +134,15 @@ border: 0px;
 background: #296BEB;
 color: #FFFFFF;
 padding: 2% 0;
+cursor: pointer;
+}
+
+.button-contact:hover{
+    background-color: #0051EF;
 }
 
 .checkbox{
-    margin: 4% 0;
+    margin: 2% 0;
 }
 
 .checkbox-text-style{
