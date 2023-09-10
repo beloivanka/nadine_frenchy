@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: 'Inter';
+}
+
+.main-title-style {
+    color: #FFF;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+}
+
+.subtitle-style {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    margin: 2% 0;
+}
+
+.button-style {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    background: #296BEB;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+.button-style:hover {
+    background-color: #0051EF;
+}
+.button-link{
+    text-decoration: none;
+}
+
+.button-link:visited {
+    color: white;
+}
+
+.title-style {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-subtitle {
+    text-align: center;
+}
+
+.text-style {
+    color: #272727;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.blue-line {
+    height: 1.5px;
+    background-color: #296BEB;
+}
+
+.black {
+    color: #272727;
+}
+
+.blue {
+    color: #296BEB;
+}
+
+.white {
+    color: white;
+}
+.grey{
+    color: #A5A5A5;
+ }
+
+ .bold{
+    font-weight: 300;
+ }
+
+
+ /* Extra small devices: phones */
+@media (max-width: 480px) {
+    /* STYLES Mobile Version */
+
+    .main-title-style {
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px;
+    }
+
+    .subtitle-style {
+        font-size: 12px;
+        line-height: normal;
+        margin: 4% 0;
+    }
+
+    .button-style {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .button-style:hover {
+        background-color: #0051EF;
+    }
+
+    .title-style {
+        font-size: 20px;
+        line-height: 10px;
+
+    }
+
+    .text-style {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .section-title {
+        text-align: center;
+        line-height: 24px;
+        margin: 4% 0;
+    }
+
+    
+}

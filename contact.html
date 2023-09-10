@@ -19,10 +19,11 @@
     <link rel="stylesheet" href="./css/menu.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/main.js"></script>
     <title>Контакты</title>
   </head>
   <body>
-  
     <!-- Main Content -->
 
     <img
@@ -36,31 +37,53 @@
       alt="Букинисты на Сене"
     />
 
-     <!-- MENU DESKTOP -->
-
-     <div class="desktop-menu-container">
-      <li class="menu-list">
-        <a class="menu-text" href="./main_page.html">Главная</a>
-      </li>
-      <li class="menu-list">
-        <a class="menu-text" href="./about.html">Обо мне</a>
-      </li>
-      <li class="menu-list">
-        <a class="menu-text" href="./courses.html">Курсы</a>
-      </li>
-      <li class="menu-list">
-        <a class="menu-text" href="">Контакты</a>
-      </li>
-    </div>
+    <!-- MENU DESKTOP -->
+    <nav>
+      <ul class="desktop-menu-container">
+        <li class="menu-list">
+          <a class="menu-text" href="main_page.html">Главная</a>
+        </li>
+        <li class="menu-list">
+          <a class="menu-text" href="about.html">Обо мне</a>
+        </li>
+        <li class="menu-list">
+          <a class="menu-text" href="courses.html">Курсы</a>
+        </li>
+        <li class="menu-list">
+          <a class="menu-text" href="contact.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
 
     <!-- MENU MOBILE  -->
 
-    <div class="mobile-menu-container">
-      <span class="material-symbols-outlined"> menu </span>
-    </div>
+    <nav>
+      <div class="mobile-menu-container humburger">
+        <span class="material-symbols-outlined menuBtn"> menu </span>
+        <span class="material-symbols-outlined closeBtn"> close </span>
+      </div>
 
+      <div class="mobile-menu-list">
+        <ul class="menu">
+          <li class="menu-list">
+            <a class="menu-text burger" href="main_page.html">Главная</a>
+          </li>
+          <li class="menu-list">
+            <a class="menu-text burger" href="about.html">Обо мне</a>
+          </li>
+          <li class="menu-list">
+            <a class="menu-text burger" href="courses.html">Курсы</a>
+          </li>
+          <li class="menu-list">
+            <a class="menu-text burger" href="contact.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-    <div class="contact-content-container">
+    <!-- DESKTOP Contact content  -->
+
+    <div class="desktop-content-container">
       <h1 class="main-title-style">У Вас есть вопросы ? Нужна помощь ?</h1>
       <div class="question-form-container">
         <p class="contact-title-style grey">Запись на первый урок</p>
@@ -69,38 +92,109 @@
         <form action="">
           <div class="form-container">
             <label class="contact-text-style" for="name">Имя</label>
-            <input class="input-style" type="text" name="first-name" id="first-name" />
-            <label class="contact-text-style" for="name">Фамилия</label>
-            <input class="input-style" type="text" name="last-name" id="last-name"/>
-            <label class="contact-text-style" for="email">E-mail</label>
-            <input class="input-style"
-              type="email"
-              name="email"
-              id="email"
+            <input
+              class="input-style"
+              type="text"
+              name="first-name"
+              id="first-name"
             />
+            <label class="contact-text-style" for="name">Фамилия</label>
+            <input
+              class="input-style"
+              type="text"
+              name="last-name"
+              id="last-name"
+            />
+            <label class="contact-text-style" for="email">E-mail</label>
+            <input class="input-style" type="email" name="email" id="email" />
             <label class="contact-text-style" for="message">Сообщение</label>
-            <textarea class="input-style"
+            <textarea
+              class="input-style"
               name="message"
               id="message"
               cols="30"
               rows="8"
             ></textarea>
             <div class="checkbox">
-            <input class="input-style" type="checkbox" id="scales" name="scales"/>
-            <label class="checkbox-text-style" for="scales">Я прочитал(а) и принимаю условия использования персональных данных</label>
+              <input
+                class="input-style"
+                type="checkbox"
+                id="scales"
+                name="scales"
+              />
+              <label class="checkbox-text-style" for="scales"
+                >Я прочитал(а) и принимаю
+                <a class="data-conditions" href=""
+                  >условия использования персональных данных</a
+                >
+              </label>
+            </div>
+            <input class="button-contact" type="submit" value="Отправить" />
           </div>
-          <input class="button-contact" type="submit" value="Отправить" />
-        </div>
         </form>
       </div>
+    </div>
 
+    <!-- MOBILE Contact content  -->
 
+    <div class="mobile-content-container">
+      <h1 class="main-title-style mobile-main-title">
+        У Вас есть вопросы ? Нужна помощь ?
+      </h1>
+      <div class="question-form-container">
+        <p class="contact-title-style grey">Запись на первый урок</p>
+        <p class="contact-title-style blue">и Ваши вопросы</p>
+        <div class="blue-line"></div>
+        <form action="">
+          <div class="form-container">
+            <label class="contact-text-style" for="name">Имя</label>
+            <input
+              class="input-style"
+              type="text"
+              name="first-name"
+              id="first-name"
+            />
+            <label class="contact-text-style" for="name">Фамилия</label>
+            <input
+              class="input-style"
+              type="text"
+              name="last-name"
+              id="last-name"
+            />
+            <label class="contact-text-style" for="email">E-mail</label>
+            <input class="input-style" type="email" name="email" id="email" />
+            <label class="contact-text-style" for="message">Сообщение</label>
+            <textarea
+              class="input-style"
+              name="message"
+              id="message"
+              cols="30"
+              rows="8"
+            ></textarea>
+            <div class="checkbox">
+              <input
+                class="input-style"
+                type="checkbox"
+                id="scales"
+                name="scales"
+              />
+              <label class="checkbox-text-style" for="scales"
+                >Я прочитал(а) и принимаю
+                <a class="data-conditions" href=""
+                  >условия использования персональных данных</a
+                >
+              </label>
+            </div>
+            <input class="button-contact" type="submit" value="Отправить" />
+          </div>
+        </form>
+      </div>
     </div>
 
     <!-- Footer -->
 
-    <div class="footer-container">
-      <div class="subscribe">
+    <footer>
+      <div class="footer-container">
         <p class="footer-text">ПОДПИСЫВАЙТЕСЬ</p>
         <div class="footer-line"></div>
         <div class="footer-icons">
@@ -115,7 +209,7 @@
           ></a>
         </div>
       </div>
-    </div>
-    <div class="copyright">Copyright Nadine_Frenchy 2023</div>
+      <div class="copyright">Copyright Nadine_Frenchy 2023</div>
+    </footer>
   </body>
 </html>

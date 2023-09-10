@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,35 +20,57 @@
     ></script>
     <link rel="stylesheet" href="./css/menu.css" />
     <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/courses.css">
+    <link rel="stylesheet" href="./css/courses.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/main.js"></script>
     <title>Курсы</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- MENU DESKTOP -->
+    <nav>
+      <ul class="desktop-menu-container">
+        <li class="menu-list">
+          <a class="menu-text" href="main_page.html">Главная</a>
+        </li>
+        <li class="menu-list">
+          <a class="menu-text" href="about.html">Обо мне</a>
+        </li>
+        <li class="menu-list">
+          <a class="menu-text" href="courses.html">Курсы</a>
+        </li>
+        <li class="menu-list">
+          <a class="menu-text" href="contact.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
 
-<ul class="desktop-menu-container">
-    <li class="menu-list">
-      <a class="menu-text" href="./main_page.html">Главная</a>
-    </li>
-    <li class="menu-list">
-      <a class="menu-text" href="./about.html">Обо мне</a>
-    </li>
-    <li class="menu-list">
-      <a class="menu-text" href="./courses.html">Курсы</a>
-    </li>
-    <li class="menu-list">
-      <a class="menu-text" href="./contact.html">Контакты</a>
-    </li>
-  </ul>
-  
-  <!-- MENU MOBILE  -->
-  
-  <div class="mobile-menu-container">
-    <span class="material-symbols-outlined"> menu </span>
-  </div>
-    
- <!-- Main content -->
+    <!-- MENU MOBILE  -->
+
+    <nav>
+      <div class="mobile-menu-container humburger">
+        <span class="material-symbols-outlined menuBtn"> menu </span>
+        <span class="material-symbols-outlined closeBtn"> close </span>
+      </div>
+
+      <div class="mobile-menu-list">
+        <ul class="menu">
+          <li class="menu-list">
+            <a class="menu-text burger" href="main_page.html">Главная</a>
+          </li>
+          <li class="menu-list">
+            <a class="menu-text burger" href="about.html">Обо мне</a>
+          </li>
+          <li class="menu-list">
+            <a class="menu-text burger" href="courses.html">Курсы</a>
+          </li>
+          <li class="menu-list">
+            <a class="menu-text burger" href="contact.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main content -->
 
     <!-- Bridge IMG -->
 
@@ -65,56 +87,199 @@
       />
       <div class="courses-page-content">
         <h1 class="main-title-style">
-            Курсы французского
-            индивидуально или
-            в мини-группе
+          Курсы французского индивидуально или в мини-группе
         </h1>
-        <h3 class="subtitle-style white courses-page-subtitle">
-            Всё, что Вам нужно – это ноутбук, наушники и доступ в интернет
-        </h3>
+        <h2 class="subtitle-style white courses-page-subtitle">
+          Всё, что Вам нужно – это ноутбук, наушники и доступ в интернет
+        </h2>
         <div class="button-container">
           <a href="./contact.html">
-          <button class="button-style">Отправить заявку</button>
-        </a>
+            <button class="button-style">Отправить заявку</button>
+          </a>
         </div>
       </div>
     </div>
 
-     <!-- Courses part 1 -->
+    <!-- Courses part 1 -->
 
-     <div class="groupe-container">
-        <img
-          class="desktop-courses-img2"
-          src="./img/desktop-courses-img2.png"
-          alt="Онлайн занятие в группе"
-        />
-        <img
-          class="mobile-courses-img2"
-          src=""
-          alt="Онлайн занятие в группе"
-        />
-        <div class="groupe-content">
-          <h2 class="title-style black">
-            Занятия в <span class="title-style blue">мини-группе </span>
-          </h2>
-          <div class="blue-line blue-line-courses"></div>
-          <div class="text-style">
-            <ul class="groupe-list">
-                <li>3-6 человек в группе</li>
-                <li>2 раза в неделю</li>
-                <li>80 мин занятие</li>
-                <li>группы А1 (с нуля), А1-А2 и В1-В2</li>
-            </ul>
-          </div>
-          <p class="text-style">
-            Занятия в мини-группе - самый эффективный способ учить французский в маленькой душевной компании! Всё как на полноценных офлайн-курсах с преподавателем, но при этом в комфортной для Вас обстановке. 
-Хотите узнать подробности о новом наборе и свободных местах в группе? Напишите мне!
-          </p>
-          <a href="./about.html">
-          <button class="button-style more-button1">Задать вопрос</button>
+    <div class="groupe-container">
+      <img
+        class="desktop-courses-img2"
+        src="./img/desktop-courses-img2.png"
+        alt="Онлайн занятие в группе"
+      />
+      <img
+        class="mobile-courses-img2"
+        src="./img/mobile-courses-img2.png"
+        alt="Онлайн занятие в группе"
+      />
+      <div class="course-content">
+        <h3 class="title-style black">
+          Занятия в <span class="title-style blue">мини-группе </span>
+        </h3>
+        <div class="blue-line blue-line-courses1"></div>
+        <div class="text-style">
+          <ul class="groupe-list">
+            <li>3-6 человек в группе</li>
+            <li>2 раза в неделю</li>
+            <li>80 мин занятие</li>
+            <li>группы А1 (с нуля), А1-А2 и В1-В2</li>
+          </ul>
+        </div>
+        <p class="text-style">
+          Занятия в мини-группе - самый эффективный способ учить французский в
+          маленькой душевной компании! Всё как на полноценных офлайн-курсах с
+          преподавателем, но при этом в комфортной для Вас обстановке. Хотите
+          узнать подробности о новом наборе и свободных местах в группе?
+          Напишите мне!
+        </p>
+        <a href="./about.html">
+          <button class="button-style contact-button1">Задать вопрос</button>
         </a>
+      </div>
+    </div>
+
+    <!-- Courses part 2 -->
+
+    <div>
+      <h3 class="title-style section-title">
+        ОНЛАЙН ЗАНЯТИЯ В <span class="blue">SKYPE, ZOOM, MEET</span>
+      </h3>
+      <h3 class="subtitle-style black section-subtitle">
+        Все учебные материалы в электронном виде и адаптированные под Ваши цели
+      </h3>
+    </div>
+    <div class="individual-container">
+      <img
+        class="desktop-courses-img3"
+        src="./img/desktop-courses-img3.png"
+        alt="Онлайн занятие индивидуально"
+      />
+      <img
+        class="mobile-courses-img3"
+        src="./img/mobile-courses-img3.png"
+        alt="Онлайн занятие индивидуально"
+      />
+      <div class="course-content">
+        <h3 class="title-style black">
+          <span class="title-style blue">Индивидуальные </span>занятия
+        </h3>
+        <div class="blue-line blue-line-courses2"></div>
+        <p class="text-style">
+          Выбирайте удобное для Вас время и темп занятий! Полностью
+          индивидуализированная программа, которую подберет опытный
+          преподаватель в зависимости от Вашего запроса и пожеланий.
+        </p>
+
+        <h3 class="title-style black business-title">
+          Деловой <span class="title-style blue">французский </span>
+        </h3>
+        <div class="blue-line blue-line-courses3"></div>
+        <p class="text-style">
+          Данный курс поможет Вам развить профессиональные навыки общения,
+          узнать подробнее культуру общения и ведения деловой переписки во
+          франкоязычных компаниях, научиться использовать бизнес-лексику без
+          труда на работе.
+        </p>
+      </div>
+    </div>
+
+    <!-- Courses part 3 -->
+
+    <div>
+      <h3 class="title-style section-title">
+        <span class="blue"> ИНТЕРАКТИВНЫЕ И ТВОРЧЕСКИЕ</span> ЗАДАНИЯ
+      </h3>
+      <h2 class="subtitle-style black section-subtitle">
+        Все учебные материалы в электронном виде и адаптированные под Ваши цели
+      </h2>
+    </div>
+    <div class="exam-container">
+      <img
+        class="desktop-courses-img4"
+        src="./img/desktop-courses-img4.png"
+        alt="Онлайн занятие индивидуально"
+      />
+      <img
+        class="mobile-courses-img4"
+        src="./img/mobile-courses-img4.png"
+        alt="Онлайн занятие индивидуально"
+      />
+      <div class="course-content">
+        <h3 class="title-style black">
+          Подготовка к <span class="blue"> DELF/DALF </span>
+        </h3>
+        <div class="blue-line blue-line-courses4"></div>
+        <p class="text-style">
+          Этот курс позволит Вам подготовиться к экзамену в кратчайшие сроки и
+          получить заветный диплом от Министерства Образования Франции,
+          необходимый для обучения в университетах Франции и работы во
+          французских компаниях.
+        </p>
+        <div class="text-style">
+          <ul class="groupe-list">
+            <li>
+              <span class="bold">DELF А1-А2 </span>для получения вида на
+              жительство
+            </li>
+            <li>
+              <span class="bold">DELF В1-В2 </span> для учебы во французских
+              ВУЗах и работы
+            </li>
+            <li>
+              <span class="bold">DALF С1-С2 </span> для аспирантов и журналистов
+            </li>
+          </ul>
+          <a href="./about.html">
+            <button class="button-style contact-button2">Задать вопрос</button>
+          </a>
         </div>
       </div>
+    </div>
 
-</body>
+    <!-- Methods -->
+    <div class="method-container">
+      <h3 class="title-style section-title black title-style">
+        Коммуникативная методика и
+        <span class="blue">грамматика как в Сорбонне!</span>
+      </h3>
+      <div class="blue-line blue-line-courses5"></div>
+      <p class="text-style">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+        non optio odio quidem earum nisi similique repellendus, facere dolore
+        ab, hic harum minima! Voluptatibus beatae sequi, quasi quidem accusamus
+        perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Architecto necessitatibus beatae, illum possimus similique nostrum
+        soluta blanditiis ullam assumenda ad voluptate obcaecati fuga in commodi
+        sed corporis aspernatur, eos debitis? Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Consequatur, non optio odio quidem earum
+        nisi similique repellendus, facere dolore ab, hic harum minima!
+        Voluptatibus beatae sequi, quasi quidem accusamus perspiciatis. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Architecto
+        necessitatibus beatae, illum possimus similique nostrum soluta
+        blanditiis ullam assumenda ad voluptate obcaecati fuga in commodi sed
+        corporis aspernatur, eos debitis?
+      </p>
+    </div>
+    <!-- Footer -->
+
+    <footer>
+      <div class="footer-container">
+        <p class="footer-text">ПОДПИСЫВАЙТЕСЬ</p>
+        <div class="footer-line"></div>
+        <div class="footer-icons">
+          <a target="_blank" href="https://www.instagram.com/"
+            ><ion-icon class="footer-icon" name="logo-instagram"></ion-icon
+          ></a>
+          <a target="_blank" href="https://www.facebook.com/"
+            ><ion-icon class="footer-icon" name="logo-facebook"></ion-icon
+          ></a>
+          <a target="_blank" href="https://www.pinterest.com/"
+            ><ion-icon class="footer-icon" name="logo-tiktok"></ion-icon
+          ></a>
+        </div>
+      </div>
+      <div class="copyright">Copyright Nadine_Frenchy 2023</div>
+    </footer>
+  </body>
 </html>

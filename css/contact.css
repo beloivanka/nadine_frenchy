@@ -1,93 +1,16 @@
-/* STYLES */
-
-body {
-    margin: 0;
-    font-family: 'Inter';
-}
-
-.main-title-style {
-    color: #FFF;
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 54px;
-}
-
-.subtitle-style {
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: normal;
-    margin: 2% 0;
-}
-
-.button-style {
-    color: #FFF;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    background: #296BEB;
-    padding: 8px 12px;
-    border-radius: 10px;
-    border-style: none;
-    cursor: pointer;
-}
-
-.button-style:hover {
-    background-color: #0051EF;
-}
-
-.title-style {
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-
-}
-
-.text-style {
-    color: #272727;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: 20px;
-    text-align: justify;
-}
-
-.black {
-    color: #272727;
-}
-
-.blue {
-    color: #296BEB;
-}
-
-.white {
-    color: white;
-}
-
-.grey{
-   color: #A5A5A5;
-}
-
-.blue-line {
-    height: 2px;
-    background-color: #296BEB;
-}
-
 /* Main Content */
 
 .desktop-contact-img{
     width: 100%;
     filter: brightness(75%);
+    margin-bottom: 2%;
 }
 
 .mobile-contact-img{
     display: none;
 }
 
-.contact-content-container{
+.desktop-content-container{
     position: absolute;
     top: 25%;
     left: 10%;
@@ -95,6 +18,10 @@ body {
     display: flex;
     flex-direction: row;
 }
+.mobile-content-container{
+    display: none;
+}
+
 .question-form-container{
     background-color: #F5F5F5;
     border-radius: 20px;
@@ -153,3 +80,49 @@ font-weight: 400;
 line-height: normal;
 text-align: justify;
 }
+
+.data-conditions{
+    cursor: pointer;
+}
+
+.data-conditions:visited {
+    color: #A5A5A5;
+}
+
+/* Extra small devices: phones */
+@media (max-width: 480px) {
+    /* Main content MOBILE */
+
+    .desktop-content-container{
+        display: none;
+    }
+
+    .desktop-contact-img {
+        display: none;
+    }
+
+    .mobile-content-container{
+        display: block;
+    }
+
+    .mobile-contact-img {
+        display: block;
+        width: 100%;
+        filter: brightness(75%);
+    }
+
+    .mobile-main-title {
+        position: absolute;
+        top: 7%;
+        left: 10%;
+    }
+
+    .main-page-subtitle {
+        margin: 10% 0;
+    }
+
+    .question-form-container{
+        border-radius: 0;
+        padding: 4% 8%;
+    }
+ }

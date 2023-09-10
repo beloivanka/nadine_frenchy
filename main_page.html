@@ -18,104 +18,122 @@
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
-    <link rel="stylesheet" href="./css/main_page.css" />
-    <link rel="stylesheet" href="./css/menu.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main_page.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <script src="js/main.js"></script>
     <title>Главная</title>
   </head>
   <body>
-    
     <!-- Main content -->
 
     <!-- Tour Eiffel IMG -->
 
-    <div>
+    <section>
       <img
         class="desktop-main-page-img"
-        src="./img/main-page-img1.png"
+        src="img/main-page-img1.png"
         alt="Tour Eiffer"
       />
       <img
         class="mobile-main-page-img"
-        src="./img/main-page-img1-iphone.png"
+        src="img/main-page-img1-iphone.png"
         alt="Tour Eiffel"
       />
       <div class="main-page-content">
         <h1 class="main-title-style">
           Хотите выучить французский язык с удовольствием?
         </h1>
-        <h3 class="subtitle-style white main-page-subtitle">
+        <h2 class="subtitle-style white main-page-subtitle">
           Тогда записывайтесь ко мне на первое занятие!
-        </h3>
+        </h2>
         <div class="button-container">
-          <a href="./contact.html">
-          <button class="button-style">Отправить заявку</button>
-        </a>
+            <button type="button" class="button-style"> <a class="button-link" href="contact.html"> Отправить заявку </a></button>
         </div>
       </div>
-    </div>
+    </section>
 
-<!-- MENU DESKTOP -->
+    <!-- MENU DESKTOP -->
+    <nav>
+      <ul class="desktop-menu-container">
+        <li class="menu-list">
+          <a class="menu-text" href="main_page.html">Главная</a>
+        </li>
+        <li class="menu-list">
+          <a class="menu-text" href="about.html">Обо мне</a>
+        </li>
+        <li class="menu-list">
+          <a class="menu-text" href="courses.html">Курсы</a>
+        </li>
+        <li class="menu-list">
+          <a class="menu-text" href="contact.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
 
-<ul class="desktop-menu-container">
-  <li class="menu-list">
-    <a class="menu-text" href="./main_page.html">Главная</a>
-  </li>
-  <li class="menu-list">
-    <a class="menu-text" href="./about.html">Обо мне</a>
-  </li>
-  <li class="menu-list">
-    <a class="menu-text" href="./courses.html">Курсы</a>
-  </li>
-  <li class="menu-list">
-    <a class="menu-text" href="./contact.html">Контакты</a>
-  </li>
-</ul>
+    <!-- MENU MOBILE  -->
 
-<!-- MENU MOBILE  -->
+    <nav>
+      <div class="mobile-menu-container humburger">
+        <span class="material-symbols-outlined menuBtn"> menu </span>
+        <span class="material-symbols-outlined closeBtn"> close </span>
+      </div>
 
-<div class="mobile-menu-container">
-  <span class="material-symbols-outlined"> menu </span>
-</div>
-
-
+      <div class="mobile-menu-list">
+        <ul class="menu">
+          <li class="menu-list">
+            <a class="menu-text burger" href="main_page.html">Главная</a>
+          </li>
+          <li class="menu-list">
+            <a class="menu-text burger" href="about.html">Обо мне</a>
+          </li>
+          <li class="menu-list">
+            <a class="menu-text burger" href="courses.html">Курсы</a>
+          </li>
+          <li class="menu-list">
+            <a class="menu-text burger" href="contact.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <!-- About me -->
 
-    <div class="about-container">
+    <section class="about-container">
       <img
         class="desktop-my-photo1"
-        src="./img/my-photo1.png"
+        src="img/my-photo1.png"
         alt="Nadine à Paris"
       />
       <img
         class="mobile-my-photo1"
-        src="./img/mobile-my-photo1.png"
+        src="img/mobile-my-photo1.png"
         alt="Nadine à Paris"
       />
       <div class="about-content">
-        <h2 class="title-style black">
+        <h3 class="title-style black">
           Давайте <span class="title-style blue">знакомиться!</span>
-        </h2>
+        </h3>
         <div class="blue-line blue-line-about"></div>
         <p class="text-style">
           Меня зовут Надежда и я - Ваш преподаватель французского,
           дипломированный специалист из Сорбонны и экзаменатор DELF/DALF с более
           чем 8-ми летним опытом преподавания.
         </p>
-        <a href="./about.html">
-        <button class="button-style more-button1">Подробнее</button>
-      </a>
+        <a href="about.html">
+          <button class="button-style more-button1"> Подробнее</button>
+        </a>
       </div>
-    </div>
+    </section>
 
     <!-- CARDS -->
 
-    <div class="classes-container">
-      <h2 class="section-title blue">КУРСЫ</h2>
-      <h3 class="subtitle-style black section-subtitle">
+    <section class="classes-container">
+      <h3 class="title-style section-title blue">КУРСЫ</h3>
+      <h2 class="subtitle-style black section-subtitle">
         Выберите для себя удобный формат занятий
-      </h3>
+      </h2>
 
       <!-- CARDS MOBILE -->
 
@@ -124,7 +142,7 @@
       <div class="mobile-cards-container">
         <img
           class="mobile-card-image"
-          src="./img/mobile-card1.png"
+          src="img/mobile-card1.png"
           alt="Computer"
         />
         <p class="card-title blue">Групповые занятия</p>
@@ -156,7 +174,9 @@
             Cамый эффективный способ учить французский в маленькой душевной
             компании...
           </p>
-          <button class="card-button">Подробнее</button>
+          <a href="courses.html">
+            <button class="card-button">Подробнее</button>
+          </a>
         </div>
       </div>
 
@@ -182,7 +202,7 @@
         <!-- Card 1 DESKTOP -->
 
         <div class="card">
-          <img class="card-image" src="./img/card1.png" alt="" />
+          <img class="card-image" src="img/card1.png" alt="" />
           <p class="card-title blue">Групповые занятия</p>
           <div class="card-content">
             <div class="level-items">
@@ -212,14 +232,16 @@
               Cамый эффективный способ учить французский в маленькой душевной
               компании...
             </p>
-            <button class="card-button">Подробнее</button>
+            <a href="courses.html">
+              <button class="card-button">Подробнее</button>
+            </a>
           </div>
         </div>
 
         <!-- Card 2 DESKTOP -->
 
         <div class="card">
-          <img class="card-image" src="./img/card2.png" alt="" />
+          <img class="card-image" src="img/card2.png" alt="" />
 
           <p class="card-title blue">Индивидуальные занятия</p>
           <div class="card-content">
@@ -243,14 +265,16 @@
               Выбирайте удобное для Вас время и темп занятий! Полностью
               индивидуализированная программа...
             </p>
-            <button class="card-button">Подробнее</button>
+            <a href="courses.html">
+              <button class="card-button">Подробнее</button>
+            </a>
           </div>
         </div>
 
         <!-- Card 3 DESKTOP -->
 
         <div class="card">
-          <img class="card-image" src="./img/card3.png" alt="" />
+          <img class="card-image" src="img/card3.png" alt="" />
 
           <p class="card-title blue">Подготовка к DELF/DALF</p>
           <div class="card-content">
@@ -274,14 +298,16 @@
               Этот курс позволит Вам подготовиться к экзамену в кратчайшие сроки
               и получить заветный диплом...
             </p>
-            <button class="card-button">Подробнее</button>
+            <a href="courses.html">
+              <button class="card-button">Подробнее</button>
+            </a>
           </div>
         </div>
 
         <!-- Card 4 DESKTOP -->
 
         <div class="card">
-          <img class="card-image" src="./img/card4.png" alt="" />
+          <img class="card-image" src="img/card4.png" alt="" />
 
           <p class="card-title blue">Деловой французский</p>
           <div class="card-content">
@@ -303,36 +329,38 @@
 
             <p class="card-text-style">
               Хотите развить профессиональные навыки общения, узнать всё о
-              ведении деловой переписки во французских компаниях...
+              ведении деловой переписки...
             </p>
-            <button class="card-button">Подробнее</button>
+            <a href="courses.html">
+              <button class="card-button">Подробнее</button>
+            </a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Our Goal -->
 
-    <div class="goal-container">
+    <section class="goal-container">
       <img
         class="desktop-main-page-photo2"
-        src="./img/main-page-img2.png"
+        src="img/main-page-img2.png"
         alt="Парижское метро"
       />
       <img
         class="mobile-main-page-photo2"
-        src="./img/mobile-main-page-photo2.png"
+        src="img/mobile-main-page-photo2.png"
         alt="Парижское метро"
       />
       <img
         class="ipad-main-page-img2"
-        src="./img/ipad-main-page-img2.png"
+        src="img/ipad-main-page-img2.png"
         alt="Парижское метро"
       />
       <div class="goal-content">
-        <h2 class="title-style black">
+        <h3 class="title-style black">
           Наша цель - <span class="title-style blue">французский!</span>
-        </h2>
+        </h3>
         <div class="blue-line blue-line-goal"></div>
         <p class="text-style">
           Если Вы хотите начать или продолжить изучать французский, сдать
@@ -342,88 +370,202 @@
           французский для работы, а также особенности коммуникации французских
           компаний, тогда не теряйте ни секунды!
         </p>
-        <a href="./contact.html">
-        <button class="button-style book-button1">Отправить заявку</button>
-      </a>
+        <a href="contact.html">
+          <button class="button-style book-button1">Отправить заявку</button>
+        </a>
       </div>
-    </div>
+    </section>
 
     <!-- Avis -->
+    <section>
+      <h3 class="title-style section-title black">
+        ОТЗЫВЫ <span class="section-title blue">УЧЕНИКОВ</span>
+      </h3>
 
-      <h2 class="section-title black">ОТЗЫВЫ <span class="section-title blue">УЧЕНИКОВ</span></h2>
+      <h2 class="subtitle-style black section-subtitle">
+        "Сколько языков ты знаешь, столько жизней ты проживаешь"
+      </h2>
 
-    <h3 class="subtitle-style black section-subtitle">
-      "Сколько языков ты знаешь, столько жизней ты проживаешь"
-    </h3>
+      <!-- Avis Wrapper -->
+      <div class="avisWrapper">
+        <!-- Avis1 Desktop -->
+        <div class="desktop-avis avisSwiper">
+          <span class="material-symbols-outlined arrow1 btnPrev">
+            arrow_back_ios
+          </span>
+          <div class="desktop-avis-container">
+            <div class="avis-items-container">
+              <img class="quotes quote1" src="img/quotes.png" alt="quotes" />
+              <div class="avis-img-name">
+                <img class="avis-img" src="img/avis_photo1.png" alt="Tatiana" />
+                <p class="avis-name blue">Татьяна О.</p>
+              </div>
+              <p class="text-style avis-text">
+                Я начала заниматься с Надей уже имея сертификат DELF B2, но все
+                же с довольно сырыми знаниями. Когда я стала готовиться к
+                переезду во Францию, мы перешли от обсуждения французских
+                пироженок к составлению резюме и подготовке к собеседованию.
+                Благодаря урокам с Надей я перешла от страха во время заказа
+                булочки к работе во французской компании. Без сомнений, за эти
+                полтора года занятий, Надя как преподаватель не только помогла
+                мне повысить уровень владения французским языком, но и найти
+                свое место в новой стране, во Франции.
+              </p>
 
-    <!-- Avis1 Desktop -->
-
-    <div class="desktop-avis-container">
-      <div class="avis-items-container">
-        <img class="quotes quote1" src="./img/quotes.png" alt="quotes" />
-        <div class="avis-img-name">
-          <img class="avis-img" src="./img/avis_photo1.png" alt="Viktoria" />
-          <p class="avis-name blue">Татьяна О.</p>
-        </div>
-        <p class="text-style avis-text">
-          Я начала заниматься с Надей уже имея сертификат DELF B2, но все же с
-          довольно сырыми знаниями. Когда я стала готовиться к переезду во
-          Францию, мы перешли от обсуждения французских пироженок к составлению
-          резюме и подготовке к собеседованию. Благодаря урокам с Надей я
-          перешла от страха во время заказа булочки к работе во французской
-          компании. Без сомнений, за эти полтора года занятий, Надя как
-          преподаватель не только помогла мне повысить уровень владения
-          французским языком, но и найти свое место в новой стране, во Франции.
-        </p>
-
-        <img class="quotes quote2" src="./img/quotes.png" alt="quotes" />
-      </div>
-    </div>
-
-    <!-- Avis 1 MOBILE -->
-    <div class="mobile-avis-container">
-      <div class="avis-items-container">
-        <img class="quotes quote1" src="./img/quotes.png" alt="quotes" />
-        <div class="photo-text-container">
-          <div class="avis-img-name">
-            <img class="avis-img" src="./img/avis_photo1.png" alt="Viktoria" />
-            <p class="avis-name blue">Татьяна О.</p>
+              <img class="quotes quote2" src="img/quotes.png" alt="quotes" />
+            </div>
           </div>
-          <p class="text-style avis-text">
-            Я начала заниматься с Надей уже имея сертификат DELF B2, но все же с
-            довольно сырыми знаниями. Когда я стала готовиться к переезду во
-            Францию, мы перешли от обсуждения французских пироженок к
-            составлению резюме и подготовке к собеседованию. Благодаря урокам с
-            Надей я перешла от страха во время заказа булочки к работе во
-            французской компании. Без сомнений, за эти полтора года занятий,
-            Надя как преподаватель не только помогла мне повысить уровень
-            владения французским языком, но и найти свое место в новой стране,
-            во Франции.
-          </p>
+          <span class="material-symbols-outlined arrow2 btnNext">
+            arrow_forward_ios
+          </span>
         </div>
-        <img class="quotes quote2" src="./img/quotes.png" alt="quotes" />
-      </div>
-    </div>
 
-    <div class="circles-container">
-      <span class="material-symbols-outlined blue swipe-circle">
-        radio_button_unchecked
-      </span>
-      <span class="material-symbols-outlined blue swipe-circle">
-        radio_button_unchecked
-      </span>
-      <span class="material-symbols-outlined blue swipe-circle">
-        radio_button_unchecked
-      </span>
-      <span class="material-symbols-outlined blue swipe-circle">
-        radio_button_unchecked
-      </span>
-    </div>
+        <!-- Avis2 Desktop -->
+        <div class="desktop-avis avisSwiper">
+          <span class="material-symbols-outlined arrow1 btnPrev">
+            arrow_back_ios
+          </span>
+          <div class="desktop-avis-container">
+            <div class="avis-items-container">
+              <img class="quotes quote1" src="img/quotes.png" alt="quotes" />
+              <div class="avis-img-name">
+                <img class="avis-img" src="img/avis-photo2.png" alt="Ryena" />
+                <p class="avis-name blue">Рена Ш.</p>
+              </div>
+              <p class="text-style avis-text">
+                Я начала заниматься с Надей уже имея сертификат DELF B2, но все
+                же с довольно сырыми знаниями. Когда я стала готовиться к
+                переезду во Францию, мы перешли от обсуждения французских
+                пироженок к составлению резюме и подготовке к собеседованию.
+                Благодаря урокам с Надей я перешла от страха во время заказа
+                булочки к работе во французской компании. Без сомнений, за эти
+                полтора года занятий, Надя как преподаватель не только помогла
+                мне повысить уровень владения французским языком, но и найти
+                свое место в новой стране, во Франции.
+              </p>
+
+              <img class="quotes quote2" src="img/quotes.png" alt="quotes" />
+            </div>
+          </div>
+          <span class="material-symbols-outlined arrow2 btnNext">
+            arrow_forward_ios
+          </span>
+        </div>
+
+        <!-- Avis3 Desktop -->
+        <div class="desktop-avis avisSwiper">
+          <span class="material-symbols-outlined arrow1 btnPrev">
+            arrow_back_ios
+          </span>
+          <div class="desktop-avis-container">
+            <div class="avis-items-container">
+              <img class="quotes quote1" src="img/quotes.png" alt="quotes" />
+              <div class="avis-img-name">
+                <img class="avis-img" src="img/avis-photo3.png" alt="Дарья" />
+                <p class="avis-name blue">Дарья Ш.</p>
+              </div>
+              <p class="text-style avis-text">
+                Я начала заниматься с Надей уже имея сертификат DELF B2, но все
+                же с довольно сырыми знаниями. Когда я стала готовиться к
+                переезду во Францию, мы перешли от обсуждения французских
+                пироженок к составлению резюме и подготовке к собеседованию.
+                Благодаря урокам с Надей я перешла от страха во время заказа
+                булочки к работе во французской компании. Без сомнений, за эти
+                полтора года занятий, Надя как преподаватель не только помогла
+                мне повысить уровень владения французским языком, но и найти
+                свое место в новой стране, во Франции.
+              </p>
+
+              <img class="quotes quote2" src="img/quotes.png" alt="quotes" />
+            </div>
+          </div>
+          <span class="material-symbols-outlined arrow2 btnNext">
+            arrow_forward_ios
+          </span>
+        </div>
+
+        <!-- Avis4 Desktop -->
+        <div class="desktop-avis avisSwiper">
+          <span class="material-symbols-outlined arrow1 btnPrev">
+            arrow_back_ios
+          </span>
+          <div class="desktop-avis-container">
+            <div class="avis-items-container">
+              <img class="quotes quote1" src="img/quotes.png" alt="quotes" />
+              <div class="avis-img-name">
+                <img
+                  class="avis-img"
+                  src="img/avis-photo4.png"
+                  alt="Виктория"
+                />
+                <p class="avis-name blue">Виктория Н.</p>
+              </div>
+              <p class="text-style avis-text">
+                Я начала заниматься с Надей уже имея сертификат DELF B2, но все
+                же с довольно сырыми знаниями. Когда я стала готовиться к
+                переезду во Францию, мы перешли от обсуждения французских
+                пироженок к составлению резюме и подготовке к собеседованию.
+                Благодаря урокам с Надей я перешла от страха во время заказа
+                булочки к работе во французской компании. Без сомнений, за эти
+                полтора года занятий, Надя как преподаватель не только помогла
+                мне повысить уровень владения французским языком, но и найти
+                свое место в новой стране, во Франции.
+              </p>
+
+              <img class="quotes quote2" src="img/quotes.png" alt="quotes" />
+            </div>
+          </div>
+          <span class="material-symbols-outlined arrow2 btnNext">
+            arrow_forward_ios
+          </span>
+        </div>
+      </div>
+
+      <!-- Avis 1 MOBILE -->
+      <div class="mobile-avis-container">
+        <div class="avis-items-container">
+          <img class="quotes quote1" src="img/quotes.png" alt="quotes" />
+          <div class="photo-text-container">
+            <div class="avis-img-name">
+              <img class="avis-img" src="img/avis_photo1.png" alt="Viktoria" />
+              <p class="avis-name blue">Татьяна О.</p>
+            </div>
+            <p class="text-style avis-text">
+              Я начала заниматься с Надей уже имея сертификат DELF B2, но все же
+              с довольно сырыми знаниями. Когда я стала готовиться к переезду во
+              Францию, мы перешли от обсуждения французских пироженок к
+              составлению резюме и подготовке к собеседованию. Благодаря урокам
+              с Надей я перешла от страха во время заказа булочки к работе во
+              французской компании. Без сомнений, за эти полтора года занятий,
+              Надя как преподаватель не только помогла мне повысить уровень
+              владения французским языком, но и найти свое место в новой стране,
+              во Франции.
+            </p>
+          </div>
+          <img class="quotes quote2" src="img/quotes.png" alt="quotes" />
+        </div>
+      </div>
+
+      <div class="circles-container">
+        <span class="material-symbols-outlined blue swipe-circle">
+          radio_button_unchecked
+        </span>
+        <span class="material-symbols-outlined blue swipe-circle">
+          radio_button_unchecked
+        </span>
+        <span class="material-symbols-outlined blue swipe-circle">
+          radio_button_unchecked
+        </span>
+        <span class="material-symbols-outlined blue swipe-circle">
+          radio_button_unchecked
+        </span>
+      </div>
+    </section>
 
     <!-- Footer -->
 
-    <div class="footer-container">
-      <div class="subscribe">
+    <footer>
+      <div class="footer-container">
         <p class="footer-text">ПОДПИСЫВАЙТЕСЬ</p>
         <div class="footer-line"></div>
         <div class="footer-icons">
@@ -438,7 +580,7 @@
           ></a>
         </div>
       </div>
-    </div>
-    <div class="copyright">Copyright Nadine_Frenchy 2023</div>
+      <div class="copyright">Copyright Nadine_Frenchy 2023</div>
+    </footer>
   </body>
 </html>
