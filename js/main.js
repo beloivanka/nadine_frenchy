@@ -1,9 +1,3 @@
-// Menu Burger
-
-let menuBtn = document.querySelector(".menuBtn");
-let menu = document.querySelector(".menu");
-let humburger = document.querySelector(".humburger");
-let closeBtn = document.querySelector(".closeBtn");
 let photo = document.querySelectorAll(".avis-photo");
 let nom = document.querySelectorAll(".avis-nom");
 let test = document.querySelectorAll(".test");
@@ -18,9 +12,6 @@ let circle4 = document.getElementById("circle4");
 
 let imgCard = document.getElementById("card-mobile");
 let title = document.getElementById("card-title");
-// let iconCard1 = document.querySelector(icon1);
-// let iconCard2 = document.querySelector(icon2);
-// let iconCard3 = document.querySelector(icon3); 
 let iconText1 = document.getElementById("icon-text1");
 let iconText2 = document.getElementById("icon-text2");
 let iconText3 = document.getElementById("icon-text3");
@@ -33,20 +24,6 @@ let rond2 = document.getElementById("rond2");
 let rond3 = document.getElementById("rond3");
 let rond4 = document.getElementById("rond4");
 
-
-function toggleMenu() {
-    if (menu.classList.contains("active")) {
-      menu.classList.remove("active");
-      closeBtn.style.display = "none";
-      menuBtn.style.display = "block";
-    } else {
-      menu.classList.add("active");
-      closeBtn.style.display = "block";
-      menuBtn.style.display = "none";
-    }
-  }
-
-humburger.addEventListener("click", toggleMenu);
 
 // Avis Slider
 
