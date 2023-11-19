@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/main_page.css" />
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
     <title>Главная</title>
   </head>
   <body>
@@ -49,7 +49,7 @@
           Тогда записывайтесь ко мне на первое занятие!
         </h2>
         <div class="button-container">
-            <button type="button" class="button-style"> <a class="button-link" href="contact.html"> Отправить заявку </a></button>
+          <a class="button-style" href="contact.html"> Отправить заявку </a>
         </div>
       </div>
     </section>
@@ -121,9 +121,7 @@
           дипломированный специалист из Сорбонны и экзаменатор DELF/DALF с более
           чем 8-ми летним опытом преподавания.
         </p>
-        <a href="about.html">
-          <button class="button-style more-button1"> Подробнее</button>
-        </a>
+        <a class="button-style" href="about.html"> Подробнее </a>
       </div>
     </section>
 
@@ -138,64 +136,61 @@
       <!-- CARDS MOBILE -->
 
       <!-- Card1 MOBILE-->
+      <section class="mobile-card-wrapper">
+        <button id="arrow-back-card" class="arrows-mob">
+          <span class="material-symbols-outlined arrow1"> arrow_back_ios </span>
+        </button>
+        <div class="mobile-cards-container">
+          <img id="card-mobile"
+            class="mobile-card-image"
+            src=""
+            alt="Computer"
+          />
+          <p id="card-title" class="card-title blue"></p>
+          <div class="card-content">
+            <div class="description-items">
+              <div class="level-items">
+                <span class="material-symbols-outlined card-icon-style">
+                  leaderboard</span
+                >
+                <span id="icon-text1" class="card-icon-text-style"></span>
+              </div>
 
-      <div class="mobile-cards-container">
-        <img
-          class="mobile-card-image"
-          src="img/mobile-card1.png"
-          alt="Computer"
-        />
-        <p class="card-title blue">Групповые занятия</p>
-        <div class="card-content">
-          <div class="description-items">
-            <div class="level-items">
-              <span class="material-symbols-outlined card-icon-style">
-                leaderboard</span
-              >
-              <span class="card-icon-text-style">A1 - В2</span>
-            </div>
+              <div class="level-items">
+                <span class="material-symbols-outlined card-icon-style">
+                  schedule
+                </span>
+                <span id="icon-text2" class="card-icon-text-style"></span>
+              </div>
 
-            <div class="level-items">
-              <span class="material-symbols-outlined card-icon-style">
-                schedule
-              </span>
-              <span class="card-icon-text-style">80 мин</span>
+              <div class="level-items">
+                <span class="material-symbols-outlined card-icon-style">
+                  group
+                </span>
+                <span id="icon-text3" class="card-icon-text-style"></span>
+              </div>
             </div>
-
-            <div class="level-items">
-              <span class="material-symbols-outlined card-icon-style">
-                group
-              </span>
-              <span class="card-icon-text-style">3 - 6 max</span>
-            </div>
+            <div class="blue-line-card"></div>
+            <p id="text-card" class="card-text-style">
+            
+            </p>
+            <a class="card-button" href="courses.html"> Подробнее</a>
           </div>
-          <div class="blue-line-card"></div>
-          <p class="card-text-style">
-            Cамый эффективный способ учить французский в маленькой душевной
-            компании...
-          </p>
-          <a href="courses.html">
-            <button class="card-button">Подробнее</button>
-          </a>
         </div>
-      </div>
+        <button id="arrow-forward-card" class="arrows-mob">
+          <span class="material-symbols-outlined arrow2">
+            arrow_forward_ios
+          </span>
+        </button>
+      </section>
 
-      <!-- Card 2 MOBILE -->
-
-      <div class="mobile-cards-circles-container">
-        <span class="material-symbols-outlined blue swipe-circle">
-          radio_button_unchecked
-        </span>
-        <span class="material-symbols-outlined blue swipe-circle">
-          radio_button_unchecked
-        </span>
-        <span class="material-symbols-outlined blue swipe-circle">
-          radio_button_unchecked
-        </span>
-        <span class="material-symbols-outlined blue swipe-circle">
-          radio_button_unchecked
-        </span>
+      <div id="circles-mobile" class="circles-container">
+        <span id="rond1" class="rond"></span>
+        <span id="rond2" class="rond"></span>
+        <span id="rond3" class="rond"></span>
+        <span id="rond4" class="rond"></span>
       </div>
+    </section>
 
       <!-- CARDS DESKTOP -->
       <div class="desktop-cards-container">
@@ -232,9 +227,7 @@
               Cамый эффективный способ учить французский в маленькой душевной
               компании...
             </p>
-            <a href="courses.html">
-              <button class="card-button">Подробнее</button>
-            </a>
+            <a class="card-button" href="courses.html"> Подробнее </a>
           </div>
         </div>
 
@@ -265,9 +258,7 @@
               Выбирайте удобное для Вас время и темп занятий! Полностью
               индивидуализированная программа...
             </p>
-            <a href="courses.html">
-              <button class="card-button">Подробнее</button>
-            </a>
+            <a class="card-button" href="courses.html"> Подробнее </a>
           </div>
         </div>
 
@@ -298,9 +289,7 @@
               Этот курс позволит Вам подготовиться к экзамену в кратчайшие сроки
               и получить заветный диплом...
             </p>
-            <a href="courses.html">
-              <button class="card-button">Подробнее</button>
-            </a>
+            <a class="card-button" href="courses.html"> Подробнее </a>
           </div>
         </div>
 
@@ -331,9 +320,7 @@
               Хотите развить профессиональные навыки общения, узнать всё о
               ведении деловой переписки...
             </p>
-            <a href="courses.html">
-              <button class="card-button">Подробнее</button>
-            </a>
+            <a class="card-button" href="courses.html"> Подробнее </a>
           </div>
         </div>
       </div>
@@ -370,9 +357,7 @@
           французский для работы, а также особенности коммуникации французских
           компаний, тогда не теряйте ни секунды!
         </p>
-        <a href="contact.html">
-          <button class="button-style book-button1">Отправить заявку</button>
-        </a>
+        <a class="button-style" href="contact.html"> Отправить заявку </a>
       </div>
     </section>
 
@@ -389,176 +374,60 @@
       <!-- Avis Wrapper -->
       <div class="avisWrapper">
         <!-- Avis1 Desktop -->
-        <div class="desktop-avis avisSwiper">
-          <span class="material-symbols-outlined arrow1 btnPrev">
-            arrow_back_ios
-          </span>
+        <div class="desktop-avis">
+          <button class="arrow-back arrows-desk">
+            <span class="material-symbols-outlined arrow1">
+              arrow_back_ios
+            </span>
+          </button>
           <div class="desktop-avis-container">
             <div class="avis-items-container">
               <img class="quotes quote1" src="img/quotes.png" alt="quotes" />
               <div class="avis-img-name">
-                <img class="avis-img" src="img/avis_photo1.png" alt="Tatiana" />
-                <p class="avis-name blue">Татьяна О.</p>
+                <img class="avis-img avis-photo" src="" alt="" />
+                <p class="avis-name blue avis-nom"></p>
               </div>
-              <p class="text-style avis-text">
-                Я начала заниматься с Надей уже имея сертификат DELF B2, но все
-                же с довольно сырыми знаниями. Когда я стала готовиться к
-                переезду во Францию, мы перешли от обсуждения французских
-                пироженок к составлению резюме и подготовке к собеседованию.
-                Благодаря урокам с Надей я перешла от страха во время заказа
-                булочки к работе во французской компании. Без сомнений, за эти
-                полтора года занятий, Надя как преподаватель не только помогла
-                мне повысить уровень владения французским языком, но и найти
-                свое место в новой стране, во Франции.
-              </p>
-
+              <p class="text-style avis-text"></p>
               <img class="quotes quote2" src="img/quotes.png" alt="quotes" />
             </div>
           </div>
-          <span class="material-symbols-outlined arrow2 btnNext">
-            arrow_forward_ios
-          </span>
-        </div>
-
-        <!-- Avis2 Desktop -->
-        <div class="desktop-avis avisSwiper">
-          <span class="material-symbols-outlined arrow1 btnPrev">
-            arrow_back_ios
-          </span>
-          <div class="desktop-avis-container">
-            <div class="avis-items-container">
-              <img class="quotes quote1" src="img/quotes.png" alt="quotes" />
-              <div class="avis-img-name">
-                <img class="avis-img" src="img/avis-photo2.png" alt="Ryena" />
-                <p class="avis-name blue">Рена Ш.</p>
-              </div>
-              <p class="text-style avis-text">
-                Я начала заниматься с Надей уже имея сертификат DELF B2, но все
-                же с довольно сырыми знаниями. Когда я стала готовиться к
-                переезду во Францию, мы перешли от обсуждения французских
-                пироженок к составлению резюме и подготовке к собеседованию.
-                Благодаря урокам с Надей я перешла от страха во время заказа
-                булочки к работе во французской компании. Без сомнений, за эти
-                полтора года занятий, Надя как преподаватель не только помогла
-                мне повысить уровень владения французским языком, но и найти
-                свое место в новой стране, во Франции.
-              </p>
-
-              <img class="quotes quote2" src="img/quotes.png" alt="quotes" />
-            </div>
-          </div>
-          <span class="material-symbols-outlined arrow2 btnNext">
-            arrow_forward_ios
-          </span>
-        </div>
-
-        <!-- Avis3 Desktop -->
-        <div class="desktop-avis avisSwiper">
-          <span class="material-symbols-outlined arrow1 btnPrev">
-            arrow_back_ios
-          </span>
-          <div class="desktop-avis-container">
-            <div class="avis-items-container">
-              <img class="quotes quote1" src="img/quotes.png" alt="quotes" />
-              <div class="avis-img-name">
-                <img class="avis-img" src="img/avis-photo3.png" alt="Дарья" />
-                <p class="avis-name blue">Дарья Ш.</p>
-              </div>
-              <p class="text-style avis-text">
-                Я начала заниматься с Надей уже имея сертификат DELF B2, но все
-                же с довольно сырыми знаниями. Когда я стала готовиться к
-                переезду во Францию, мы перешли от обсуждения французских
-                пироженок к составлению резюме и подготовке к собеседованию.
-                Благодаря урокам с Надей я перешла от страха во время заказа
-                булочки к работе во французской компании. Без сомнений, за эти
-                полтора года занятий, Надя как преподаватель не только помогла
-                мне повысить уровень владения французским языком, но и найти
-                свое место в новой стране, во Франции.
-              </p>
-
-              <img class="quotes quote2" src="img/quotes.png" alt="quotes" />
-            </div>
-          </div>
-          <span class="material-symbols-outlined arrow2 btnNext">
-            arrow_forward_ios
-          </span>
-        </div>
-
-        <!-- Avis4 Desktop -->
-        <div class="desktop-avis avisSwiper">
-          <span class="material-symbols-outlined arrow1 btnPrev">
-            arrow_back_ios
-          </span>
-          <div class="desktop-avis-container">
-            <div class="avis-items-container">
-              <img class="quotes quote1" src="img/quotes.png" alt="quotes" />
-              <div class="avis-img-name">
-                <img
-                  class="avis-img"
-                  src="img/avis-photo4.png"
-                  alt="Виктория"
-                />
-                <p class="avis-name blue">Виктория Н.</p>
-              </div>
-              <p class="text-style avis-text">
-                Я начала заниматься с Надей уже имея сертификат DELF B2, но все
-                же с довольно сырыми знаниями. Когда я стала готовиться к
-                переезду во Францию, мы перешли от обсуждения французских
-                пироженок к составлению резюме и подготовке к собеседованию.
-                Благодаря урокам с Надей я перешла от страха во время заказа
-                булочки к работе во французской компании. Без сомнений, за эти
-                полтора года занятий, Надя как преподаватель не только помогла
-                мне повысить уровень владения французским языком, но и найти
-                свое место в новой стране, во Франции.
-              </p>
-
-              <img class="quotes quote2" src="img/quotes.png" alt="quotes" />
-            </div>
-          </div>
-          <span class="material-symbols-outlined arrow2 btnNext">
-            arrow_forward_ios
-          </span>
+          <button class="arrow-forward arrows-desk">
+            <span class="material-symbols-outlined arrow2">
+              arrow_forward_ios
+            </span>
+          </button>
         </div>
       </div>
-
       <!-- Avis 1 MOBILE -->
-      <div class="mobile-avis-container">
-        <div class="avis-items-container">
-          <img class="quotes quote1" src="img/quotes.png" alt="quotes" />
-          <div class="photo-text-container">
-            <div class="avis-img-name">
-              <img class="avis-img" src="img/avis_photo1.png" alt="Viktoria" />
-              <p class="avis-name blue">Татьяна О.</p>
+      <section class="mobile-avis-wrapper">
+        <button class="arrow-back arrows-mob">
+          <span class="material-symbols-outlined arrow1"> arrow_back_ios </span>
+        </button>
+        <div class="mobile-avis-container">
+          <div class="avis-items-container">
+            <img class="quotes quote1" src="img/quotes.png" alt="quotes" />
+            <div class="photo-text-container">
+              <div class="avis-img-name">
+                <img class="avis-img avis-photo" src="" alt="" />
+                <p class="avis-name blue avis-nom"></p>
+              </div>
+              <p class="text-style avis-text"></p>
             </div>
-            <p class="text-style avis-text">
-              Я начала заниматься с Надей уже имея сертификат DELF B2, но все же
-              с довольно сырыми знаниями. Когда я стала готовиться к переезду во
-              Францию, мы перешли от обсуждения французских пироженок к
-              составлению резюме и подготовке к собеседованию. Благодаря урокам
-              с Надей я перешла от страха во время заказа булочки к работе во
-              французской компании. Без сомнений, за эти полтора года занятий,
-              Надя как преподаватель не только помогла мне повысить уровень
-              владения французским языком, но и найти свое место в новой стране,
-              во Франции.
-            </p>
+            <img class="quotes quote2" src="img/quotes.png" alt="quotes" />
           </div>
-          <img class="quotes quote2" src="img/quotes.png" alt="quotes" />
         </div>
-      </div>
+        <button class="arrow-forward arrows-mob">
+          <span class="material-symbols-outlined arrow2">
+            arrow_forward_ios
+          </span>
+        </button>
+      </section>
 
       <div class="circles-container">
-        <span class="material-symbols-outlined blue swipe-circle">
-          radio_button_unchecked
-        </span>
-        <span class="material-symbols-outlined blue swipe-circle">
-          radio_button_unchecked
-        </span>
-        <span class="material-symbols-outlined blue swipe-circle">
-          radio_button_unchecked
-        </span>
-        <span class="material-symbols-outlined blue swipe-circle">
-          radio_button_unchecked
-        </span>
+        <span id="circle1" class="rond"></span>
+        <span id="circle2" class="rond"></span>
+        <span id="circle3" class="rond"></span>
+        <span id="circle4" class="rond"></span>
       </div>
     </section>
 

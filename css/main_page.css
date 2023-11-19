@@ -2,7 +2,7 @@
 
 .desktop-main-page-img {
     width: 100%;
-    filter: brightness(75%)
+    filter: brightness(75%);
 }
 
 .mobile-main-page-img {
@@ -42,15 +42,13 @@
 .about-content {
     background-color: #F0F0F0;
     padding: 10% 6%;
-
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .blue-line-about {
-    width: 80%;
-}
-
-.more-button1 {
-    margin: 4% 0 4% 68%;
+    width: 62%;
 }
 
 /* Courses Cards */
@@ -134,6 +132,7 @@
     border-style: none;
     cursor: pointer;
     margin-left: 48%;
+    text-decoration: none;
 }
 
 .card-button:hover {
@@ -167,18 +166,17 @@
 }
 
 .goal-content {
-
     background-color: #F0F0F0;
-    padding: 4%
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .blue-line-goal {
-    width: 78%;
+    width: 72%;
 }
 
-.book-button1 {
-    margin: 4% 0 4% 61%;
-}
 
 /* AVIS */
 
@@ -196,6 +194,18 @@
     margin: 14% 6% 0 2%;
     font-size: 30px;
     color: #296BEB;
+}
+
+.arrows-desk{
+    border: none;
+    background: none;
+}
+
+.arrows{
+    display: none;
+}
+.arrows-mob{
+    display: none;
 }
 
 .mobile-avis-container {
@@ -218,11 +228,6 @@
 .quotes {
     width: 6%;
     height: 100%;
-}
-
-.circles-container {
-    text-align: center;
-    margin-bottom: 2%;
 }
 
 .quote2 {
@@ -258,8 +263,30 @@
     font-size: 14px;
 }
 
-.swipe-circle {
-    font-size: 16px;
+.circles-container {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 2%;
+}
+
+.rond{
+    border-radius: 50%;
+    border: 1px solid  #296BEB;
+    height: 16px;
+    width: 16px;
+}
+
+.empty{
+    background-color: white;
+}
+
+.filled{
+    background-color: #296BEB;
+}
+
+#circles-mobile{
+    display: none;
 }
 
 /* Extra small devices: phones */
@@ -325,6 +352,10 @@
 
     /* CARDS MOBILE */
 
+    .mobile-card-wrapper{
+        display: flex;
+    }
+
     .mobile-cards-container {
         display: block;
         background-color: #F0F0F0;
@@ -359,6 +390,10 @@
         display: block;
         text-align: center;
         margin: 2% 0;
+    }
+
+    #circles-mobile{
+        display: flex;
     }
 
     /* Our goal MOBILE */
@@ -404,12 +439,17 @@
         display: none;
     }
 
+    .mobile-avis-wrapper{
+        display: flex;
+        flex-direction: row;
+    }
+
     .mobile-avis-container {
         display: block;
         background-color: #F0F0F0;
         border-radius: unset;
         box-shadow: none;
-        padding: 6% 8% 6% 8%;
+        padding: 6% 4% 6% 4%;
         margin: 0;
     }
 
@@ -430,11 +470,12 @@
     }
 
     .quote2 {
-        margin-top: 96%;
+        margin-top: 136%;
     }
 
     .quotes {
         width: 10%;
+        height: 4%;
     }
 
     .avis-name {
@@ -445,6 +486,17 @@
 
     .circles-container {
         margin: 2% 0;
+    }
+
+    .arrows{
+        display: block;
+        text-align: center;
+    }
+
+    .arrows-mob{
+        display: block;
+        border: none;
+        background: none;
     }
 
 }

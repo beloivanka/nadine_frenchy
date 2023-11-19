@@ -23,24 +23,22 @@ body {
     color: #FFF;
     font-size: 16px;
     font-style: normal;
-    font-weight: 200;
+    font-weight: 300;
     line-height: normal;
     background: #296BEB;
     padding: 8px 12px;
     border-radius: 10px;
     border-style: none;
     cursor: pointer;
-    margin-top: 2%;
+    text-decoration: none;
+    text-align: center;
 }
 
 .button-style:hover {
     background-color: #0051EF;
 }
-.button-link{
-    text-decoration: none;
-}
 
-.button-link:visited {
+.button-style:visited {
     color: white;
 }
 

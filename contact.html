@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <script src="./js/main.js"></script>
+    <script src="js/contact.js" defer></script>
     <title>Контакты</title>
   </head>
   <body>
@@ -89,7 +89,7 @@
         <p class="contact-title-style grey">Запись на первый урок</p>
         <p class="contact-title-style blue">и Ваши вопросы</p>
         <div class="blue-line"></div>
-        <form action="">
+        <form action="" >
           <div class="form-container">
             <label class="contact-text-style" for="name">Имя</label>
             <input
@@ -97,8 +97,9 @@
               type="text"
               name="first-name"
               id="first-name"
+              required
             />
-            <label class="contact-text-style" for="name">Фамилия</label>
+            <!-- <label class="contact-text-style" for="name">Фамилия</label>
             <input
               class="input-style"
               type="text"
@@ -106,7 +107,7 @@
               id="last-name"
             />
             <label class="contact-text-style" for="email">E-mail</label>
-            <input class="input-style" type="email" name="email" id="email" />
+            <input class="input-style" type="email" name="email" id="email" /> -->
             <label class="contact-text-style" for="message">Сообщение</label>
             <textarea
               class="input-style"
@@ -114,22 +115,9 @@
               id="message"
               cols="30"
               rows="8"
+              required
             ></textarea>
-            <div class="checkbox">
-              <input
-                class="input-style"
-                type="checkbox"
-                id="scales"
-                name="scales"
-              />
-              <label class="checkbox-text-style" for="scales"
-                >Я прочитал(а) и принимаю
-                <a class="data-conditions" href=""
-                  >условия использования персональных данных</a
-                >
-              </label>
-            </div>
-            <input class="button-contact" type="submit" value="Отправить" />
+            <input id="sendBtn" class="button-contact" type="submit" value="Отправить" />
           </div>
         </form>
       </div>
